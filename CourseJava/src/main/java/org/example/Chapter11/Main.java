@@ -10,8 +10,9 @@ import java.text.ParseException;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
-import java.util.Arrays;
-import java.util.Locale;
+import java.util.*;
+import java.util.concurrent.ThreadLocalRandom;
+import java.util.function.IntFunction;
 import java.util.stream.Stream;
 
 public class Main {
@@ -114,10 +115,18 @@ public class Main {
 
                 NumberFormat.getCompactNumberInstance(Locale.FRENCH, NumberFormat.Style.LONG),
                 NumberFormat.getCompactNumberInstance(Locale.FRENCH, NumberFormat.Style.SHORT),
-
                 NumberFormat.getNumberInstance());
 
         formatters.map(s -> s.format(7_123_456)).forEach(System.out::println);
+    }
+    static void formatNumber() throws ParseException {
+            double amount = 123.4;
+            Locale fr = new Locale("fr","FR");
+            NumberFormat nrF = NumberFormat.getInstance(fr);
+            String s = nrF.format(amount);
+            nrF = NumberFormat.getInstance();
+            Number amount2 = nrF.parse(s);
+            System.out.println(amount + " " + amount2);
     }
     static void formatLocalizingDate(){
         var italy = Locale.of("it","IT");
@@ -137,10 +146,18 @@ public class Main {
         System.out.println(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT).format(dt)
                 + " ---- "
                 + DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT).withLocale(italy).format(dt));
-
-
+        int a = 'a';
+        float b = a;
+        Main m = new Main() {
+            static int isStatic = 10;
+            static void formatCompactNumber() {
+                System.out.println("Hahaha");
+            }
+        };
     }
-    static void main() throws IOException{
+
+
+    static void main() throws IOException, ParseException {
         func();
         String str = null;
         try {
@@ -156,5 +173,19 @@ public class Main {
         localizationNumbers();
         formatCompactNumber();
         formatLocalizingDate();
+
+        List<?> b = new ArrayList<>();
+        System.out.println(b.getClass());
+
+        formatNumber();
+    }
+    interface Aba {
+        private void bb(){}
+        default void cc(){}
+        void baba();
+        static void aaa(){
+//            bb();
+//            cc();
+        }
     }
 }
