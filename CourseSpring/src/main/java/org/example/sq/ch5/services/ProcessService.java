@@ -1,6 +1,7 @@
 package org.example.sq.ch5.services;
 
 import org.example.sq.ch5.ProcessObj;
+import org.springframework.beans.factory.annotation.Lookup;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +16,11 @@ public class ProcessService {
     public ProcessObj getAnProcessObj(){
         var procObj = context.getBean(ProcessObj.class);
         return procObj;
+    }
+
+    @Lookup
+    public ProcessObj getObjWithLockUp(){
+        return null;
     }
 }
 

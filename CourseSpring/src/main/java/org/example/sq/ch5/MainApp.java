@@ -38,5 +38,10 @@ public class MainApp {
         var proc2 = processServ.getAnProcessObj();
         System.out.println("Produce a different processObj each time call the method." + '\n' + proc1 + " and " + proc2);
 
+        // --- @LOKUP
+        var proc3 = processServ.getObjWithLockUp();
+        var proc4 = processServ.getObjWithLockUp();
+
+        System.out.println("Produce different objs without injecting context: " + '\n' + proc3 + " and " + proc4);
     }
 }
