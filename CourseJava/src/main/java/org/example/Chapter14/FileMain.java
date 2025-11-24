@@ -59,5 +59,6 @@ public class FileMain {
         filesNIOEx1(f.toPath());
 //        DataInputStream
         Console c =System.console();
+
     }
 }
