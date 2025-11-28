@@ -15,6 +15,6 @@ public class MainApp {
 
         LightControlServiceImpl service1 = context.getBean(LightControlServiceImpl.class);
         LightControlServiceImpl service2 = context.getBean(LightControlServiceImpl.class);
-        System.out.println("Are beans equals ? " + (service1==service2) it + '\n'  + service1 +" - " + service2);
+        System.out.println("Are beans equals ? " + (service1==service2) + '\n'  + service1 +" - " + service2);
     }
 }

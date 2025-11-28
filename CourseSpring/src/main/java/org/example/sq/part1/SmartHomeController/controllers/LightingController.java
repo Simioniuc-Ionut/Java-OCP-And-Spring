@@ -1,5 +1,6 @@
 package org.example.sq.part1.SmartHomeController.controllers;
 
+import org.example.sq.part1.SmartHomeController.aop.audit.ToLog;
 import org.example.sq.part1.SmartHomeController.dto.LightingRequestDTO;
 import org.example.sq.part1.SmartHomeController.model.dateTime.DateTimer;
 import org.example.sq.part1.SmartHomeController.model.dateTime.TimeTimer;
@@ -15,6 +16,7 @@ import java.util.Map;
 
 @Controller
 @RequestMapping("/lighting")
+@ToLog
 public class LightingController {
 
     private final Map<String,LightingControlService> lightService;

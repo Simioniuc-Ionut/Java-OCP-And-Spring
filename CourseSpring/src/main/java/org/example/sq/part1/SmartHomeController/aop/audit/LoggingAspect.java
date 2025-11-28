@@ -21,12 +21,13 @@ public class LoggingAspect {
         Object[] args = joinPoint.getArgs();
 
         Object result;
-        logger.info(() -> "Class name: " + className + " Starting method: " + methodName + " with args: " + Arrays.toString(args));
+        logger.info(() -> "\n BEFORE execution || Class name: " + className + " Starting method: " + methodName + " with args: " + Arrays.toString(args));
         try {
             result = joinPoint.proceed();
-            logger.info(() -> "Class name: " + className + "Completed method: " + methodName + " ,result: " + result);
+            logger.warning(() -> "\n RESULT execution || " + " result: " + result);
+            logger.info(() -> "\n AFTER execution ||  Class name: " + className + "Completed method: " + methodName);
         } catch (Throwable ex) {
-            logger.severe(() -> "Class name: " + className + "Exception in method: " + methodName + " -> " + ex.getMessage());
+            logger.severe(() -> "\n ERROR!! Class name: " + className + "Exception in method: " + methodName + " -> " + ex.getMessage());
             throw ex;
         }
         return result;
