@@ -2,7 +2,6 @@ package org.example.sq.part1.ch5;
 
 import org.example.sq.part1.ch5.configuration.ProjectConfig;
 import org.example.sq.part1.ch5.services.*;
-import org.example.sq.part1.ch5.services.*;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class MainApp {

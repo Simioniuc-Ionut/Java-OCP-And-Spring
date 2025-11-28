@@ -1,7 +1,6 @@
 package org.example.sq.part2.ch7.services;
 
 import org.example.sq.part2.ch7.Product;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
