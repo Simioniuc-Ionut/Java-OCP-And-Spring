@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.example.sq.part1.SmartHomeController.model.lightning.LightEntity</OriginalElement>
+  <nodes>
+    <node x="-1144.1109121612024" y="1165.845401961209">org.example.sq.part1.SmartHomeController.services.lightning.LightingControlService</node>
+    <node x="-226.92040230788157" y="1191.1002214003126">org.example.sq.part1.SmartHomeController.services.security.SecurityControlService</node>
+    <node x="853.1880186739156" y="500.25124118989993">org.example.sq.part1.SmartHomeController.model.dateTime.TimeTimer</node>
+    <node x="-710.6395020812506" y="80.79608648899787">org.example.sq.part1.SmartHomeController.repository.lightRepository.LightRepository</node>
+    <node x="321.37850731507706" y="1039.8277236090244">org.example.sq.part1.SmartHomeController.model.lightning.LightEntity</node>
+    <node x="-63.830085905422806" y="1567.5552258177358">org.example.sq.part1.SmartHomeController.model.lightning.LightEntity.Builder</node>
+    <node x="447.78283907181094" y="66.50844141088925">org.example.sq.part1.SmartHomeController.model.lightning.LightLocation</node>
+    <node x="-480.73331331073143" y="939.7592331905512">org.example.sq.part1.SmartHomeController.SmartHomeDevice</node>
+    <node x="115.38018731455196" y="2048.033936799102">org.example.sq.part1.SmartHomeController.aop.validation.ValidationId</node>
+    <node x="-221.12596778390883" y="194.1127684158213">org.example.sq.part1.SmartHomeController.configuration.ProjectConfiguration</node>
+    <node x="-674.0799276900703" y="2362.5757771285635">org.example.sq.part1.SmartHomeController.dto.LightingResponseDTO</node>
+    <node x="-1541.9529967503286" y="1497.6406030739286">org.example.sq.part1.SmartHomeController.services.lightning.GroupLightControlServiceImpl</node>
+    <node x="-533.1614642055913" y="1189.3384504842752">org.example.sq.part1.SmartHomeController.services.temperature.TemperatureControlService</node>
+    <node x="1578.265212496415" y="1430.1747356391788">org.example.sq.part1.SmartHomeController.controllers.TemperatureController</node>
+    <node x="1210.3392900327544" y="500.25124118989993">org.example.sq.part1.SmartHomeController.model.dateTime.DateTimer</node>
+    <node x="-917.7660760169301" y="1498.1460543730366">org.example.sq.part1.SmartHomeController.services.lightning.LightControlServiceImpl</node>
+    <node x="1012.2728083123687" y="208.61276841582136">org.example.sq.part1.SmartHomeController.services.ScheduleTimerControl</node>
+    <node x="7.106651211950293" y="66.50844141088926">org.example.sq.part1.SmartHomeController.model.dateTime.Date</node>
+    <node x="-221.12596778390886" y="66.50844141088925">org.example.sq.part1.SmartHomeController.model.lightning.Colors</node>
+    <node x="186.58311591566644" y="2120.532022735667">org.example.sq.part1.SmartHomeController.aop.audit.LoggingAspect</node>
+    <node x="-693.5298475663177" y="945.2623319685798">org.example.sq.part1.SmartHomeController.Openable</node>
+    <node x="-163.89311026860395" y="949.3542658334019">org.example.sq.part1.SmartHomeController.Lockable</node>
+    <node x="-127.46200047859656" y="2120.532022735667">org.example.sq.part1.SmartHomeController.aop.validation.LightingValidationAspect</node>
+    <node x="198.72102129707503" y="66.50844141088925">org.example.sq.part1.SmartHomeController.model.lightning.LightType</node>
+    <node x="-1049.353836983917" y="2156.7447301206234">org.example.sq.part1.SmartHomeController.aop.audit.ToLog</node>
+    <node x="1367.622941012295" y="1430.1747356391788">org.example.sq.part1.SmartHomeController.controllers.SecurityController</node>
+    <node x="-767.7942068444995" y="429.33439511519566">org.example.sq.part1.SmartHomeController.repository.lightRepository.LightInMemoryRepository</node>
+    <node x="892.3074167023165" y="1430.1747356391788">org.example.sq.part1.SmartHomeController.controllers.LightingController</node>
+    <node x="-365.73192053412527" y="2362.5757771285635">org.example.sq.part1.SmartHomeController.dto.LightingRequestDTO</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.example.sq.part1.SmartHomeController.model.lightning.LightEntity.Builder" target="org.example.sq.part1.SmartHomeController.model.lightning.LightEntity" relationship="INNER_CLASS">
+      <point x="0.0" y="-157.0" />
+      <point x="61.169914094577194" y="1394.8277236090244" />
+      <point x="-106.5" y="0.0" />
+    </edge>
+    <edge source="org.example.sq.part1.SmartHomeController.services.lightning.GroupLightControlServiceImpl" target="org.example.sq.part1.SmartHomeController.services.lightning.LightingControlService" relationship="REALIZATION">
+      <point x="-3.249671408411814E-6" y="-212.99960307392848" />
+      <point x="-1359.453" y="1433.0" />
+      <point x="-961.611" y="1433.0" />
+      <point x="-8.783879763996083E-5" y="100.99959803879096" />
+    </edge>
+    <edge source="org.example.sq.part1.SmartHomeController.services.temperature.TemperatureControlService" target="org.example.sq.part1.SmartHomeController.SmartHomeDevice" relationship="INTERFACE_GENERALIZATION">
+      <point x="-122.99953579440864" y="-4.504842752339755E-4" />
+      <point x="-594.0" y="1204.838" />
+      <point x="-594.0" y="1135.0" />
+      <point x="-356.233" y="1135.0" />
+      <point x="3.133107314283734E-4" y="58.99976680944883" />
+    </edge>
+    <edge source="org.example.sq.part1.SmartHomeController.services.lightning.LightControlServiceImpl" target="org.example.sq.part1.SmartHomeController.services.lightning.LightingControlService" relationship="REALIZATION">
+      <point x="7.601693016567879E-5" y="-171.00005437303662" />
+      <point x="-735.266" y="1433.0" />
+      <point x="-961.611" y="1433.0" />
+      <point x="-8.783879763996083E-5" y="100.99959803879096" />
+    </edge>
+    <edge source="org.example.sq.part1.SmartHomeController.services.lightning.LightingControlService" target="org.example.sq.part1.SmartHomeController.SmartHomeDevice" relationship="INTERFACE_GENERALIZATION">
+      <point x="14.99991216120236" y="-101.00040196120904" />
+      <point x="-946.611" y="1135.0" />
+      <point x="-356.233" y="1135.0" />
+      <point x="3.133107314283734E-4" y="58.99976680944883" />
+    </edge>
+    <edge source="org.example.sq.part1.SmartHomeController.services.lightning.GroupLightControlServiceImpl" target="org.example.sq.part1.SmartHomeController.aop.audit.ToLog" relationship="REALIZATION">
+      <point x="182.4999967503286" y="3.969260715166456E-4" />
+      <point x="-1113.0" y="1710.641" />
+      <point x="-1113.0" y="2172.2452" />
+      <point x="-47.50016301608298" y="4.698793763964204E-4" />
+    </edge>
+    <edge source="org.example.sq.part1.SmartHomeController.repository.lightRepository.LightInMemoryRepository" target="org.example.sq.part1.SmartHomeController.repository.lightRepository.LightRepository" relationship="REALIZATION">
+      <point x="-22.345295236751042" y="-143.0" />
+      <point x="0.0" y="115.0" />
+    </edge>
+    <edge source="org.example.sq.part1.SmartHomeController.services.lightning.LightControlServiceImpl" target="org.example.sq.part1.SmartHomeController.aop.audit.ToLog" relationship="REALIZATION">
+      <point x="-182.49992398306983" y="-5.437303661892656E-5" />
+      <point x="-1113.0" y="1669.146" />
+      <point x="-1113.0" y="2172.2452" />
+      <point x="-47.50016301608298" y="4.698793763964204E-4" />
+    </edge>
+    <edge source="org.example.sq.part1.SmartHomeController.services.security.SecurityControlService" target="org.example.sq.part1.SmartHomeController.Openable" relationship="INTERFACE_GENERALIZATION">
+      <point x="4.0230788157202824E-4" y="-15.50022140031274" />
+      <point x="-120.42" y="1158.0" />
+      <point x="-579.0" y="1158.0" />
+      <point x="-579.0" y="1112.0" />
+      <point x="-618.53" y="1112.0" />
+      <point x="-1.5243368227402243E-4" y="44.99966803142013" />
+    </edge>
+    <edge source="org.example.sq.part1.SmartHomeController.model.dateTime.TimeTimer" target="org.example.sq.part1.SmartHomeController.services.ScheduleTimerControl" relationship="REALIZATION">
+      <point x="-1.7223862568016557E-4" y="-74.00045041416479" />
+      <point x="977.1878464352899" y="446.0656" />
+      <point x="1136.2724000000003" y="446.0656" />
+      <point x="-4.0831236856320174E-4" y="59.999842990130425" />
+    </edge>
+    <edge source="org.example.sq.part1.SmartHomeController.services.security.SecurityControlService" target="org.example.sq.part1.SmartHomeController.SmartHomeDevice" relationship="INTERFACE_GENERALIZATION">
+      <point x="15.000402307881572" y="-15.50022140031274" />
+      <point x="-105.42" y="1135.0" />
+      <point x="-356.233" y="1135.0" />
+      <point x="3.133107314283734E-4" y="58.99976680944883" />
+    </edge>
+    <edge source="org.example.sq.part1.SmartHomeController.services.security.SecurityControlService" target="org.example.sq.part1.SmartHomeController.Lockable" relationship="INTERFACE_GENERALIZATION">
+      <point x="30.000402307881572" y="-15.5" />
+      <point x="13.473110268603946" y="44.999999999999886" />
+    </edge>
+    <edge source="org.example.sq.part1.SmartHomeController.model.dateTime.DateTimer" target="org.example.sq.part1.SmartHomeController.services.ScheduleTimerControl" relationship="REALIZATION">
+      <point x="-4.90032754441927E-4" y="-60.000241189899725" />
+      <point x="1334.3388" y="446.0656" />
+      <point x="1136.2724000000003" y="446.0656" />
+      <point x="-4.0831236856320174E-4" y="59.999842990130425" />
+    </edge>
+    <edge source="org.example.sq.part1.SmartHomeController.services.lightning.LightingControlService" target="org.example.sq.part1.SmartHomeController.Openable" relationship="INTERFACE_GENERALIZATION">
+      <point x="-8.783879763996083E-5" y="-101.00040196120904" />
+      <point x="-961.611" y="1112.0" />
+      <point x="-618.53" y="1112.0" />
+      <point x="-1.5243368227402243E-4" y="44.99966803142013" />
+    </edge>
+    <edge source="org.example.sq.part1.SmartHomeController.services.temperature.TemperatureControlService" target="org.example.sq.part1.SmartHomeController.Openable" relationship="INTERFACE_GENERALIZATION">
+      <point x="4.642055913564036E-4" y="-15.500450484275234" />
+      <point x="-410.161" y="1158.0" />
+      <point x="-579.0" y="1158.0" />
+      <point x="-579.0" y="1112.0" />
+      <point x="-618.53" y="1112.0" />
+      <point x="-1.5243368227402243E-4" y="44.99966803142013" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.3022061045633123" showDependencies="false" x="-453.76549906250204" y="1921.8756" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
