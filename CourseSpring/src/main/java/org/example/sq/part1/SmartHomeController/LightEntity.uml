@@ -126,9 +126,10 @@
       <point x="-1.5243368227402243E-4" y="44.99966803142013" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Compact" zoom="0.3022061045633123" showDependencies="false" x="-453.76549906250204" y="1921.8756" />
+  <settings layout="Hierarchic Compact" zoom="0.7656730033738393" showDependencies="false" x="-925.6068964814574" y="2046.8765868065573" />
   <SelectedNodes />
   <Categories>
+    <Category>Constructors</Category>
     <Category>Fields</Category>
     <Category>Inner Classes</Category>
     <Category>Methods</Category>

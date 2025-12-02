@@ -5,7 +5,7 @@ import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.annotation.*;
 
 @Configuration
-@ComponentScan(basePackages = "org.example.sq.ch5")
+@ComponentScan(basePackages = "org.example.sq.part1.ch5")
 public class ProjectConfig {
 
     @Bean

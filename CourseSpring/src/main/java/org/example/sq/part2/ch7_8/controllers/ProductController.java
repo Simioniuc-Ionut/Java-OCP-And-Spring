@@ -1,7 +1,7 @@
-package org.example.sq.part2.ch7.controllers;
+package org.example.sq.part2.ch7_8.controllers;
 
-import org.example.sq.part2.ch7.Product;
-import org.example.sq.part2.ch7.services.ProductService;
+import org.example.sq.part2.ch7_8.Product;
+import org.example.sq.part2.ch7_8.services.ProductService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+</head>
+<body>
+    <h1>Welcome, <span th:text="${username}"></span></h1>
+    <a href="/home?logout">Log out</a>
+    <h1> Your total login request counter is :<span th:text="${counter}"></span> </h1>
+</body>
+</html>

@@ -13,7 +13,7 @@ public class SecurityAspect {
     private Logger logger =
             Logger.getLogger(SecurityAspect.class.getName());
 
-    @Around("execution(* org.example.sq.ch6.services.*.*(..))")
+    @Around("execution(* org.example.sq.part1.ch6.services.*.*(..))")
     public Object secure(ProceedingJoinPoint joinPoint) throws Throwable {
         logger.warning("Secure Layer");
         Object response = joinPoint.proceed();

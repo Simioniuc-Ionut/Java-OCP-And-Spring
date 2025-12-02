@@ -1,4 +1,4 @@
-package org.example.sq.part2.ch7.controllers;
+package org.example.sq.part2.ch7_8.controllers;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;

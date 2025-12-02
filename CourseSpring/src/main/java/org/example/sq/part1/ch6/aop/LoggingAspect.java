@@ -14,7 +14,7 @@ public class LoggingAspect {
 
     private Logger logger = Logger.getLogger(LoggingAspect.class.getName());
 
-    @Pointcut(value = "execution(* org.example.sq.ch6.services.*.*(..))")
+    @Pointcut(value = "execution(* org.example.sq.part1.ch6.services.*.*(..))")
     public void myPointcut() {
     }
 
